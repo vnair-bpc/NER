@@ -24,7 +24,7 @@ def validate_api_key(request):
         return False
 
 @app.route("/extractner", methods=["GET"])
-def addfiletoindex():    
+def extractner():    
     if not validate_api_key(request):
         return jsonify("Authorization Failed"), 401
     
