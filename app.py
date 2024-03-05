@@ -15,7 +15,6 @@ logging.basicConfig(
 with open("config.json", "r") as config_file:
     config_data = json.load(config_file)
 
-
 def validate_api_key(request):
     code = request.args.get("code")
     if code == config_data["extractner"]["code"]:
