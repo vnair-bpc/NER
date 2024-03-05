@@ -37,3 +37,6 @@ def extractner():
         return json_output,200
     except Exception as e:
         return str(e),500
+
+if __name__ == "__main__":
+    app.run(debug=True, port=80)    
