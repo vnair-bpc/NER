@@ -21,6 +21,10 @@ def validate_api_key(request):
         return True
     else:
         return False
+    
+@app.route('/')
+def index():
+    return 'Unauthorized', 200
 
 @app.route("/extractner", methods=["GET"])
 def extractner():    
